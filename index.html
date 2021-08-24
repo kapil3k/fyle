@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Fyle-Assesment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="intro">
+        <div class="info">
+            <h5 class="text-color">AWARD WINNING</h5>
+            <h1 class="font-weight-bolder mt-4 mb-4">DIGITAL MARKETING AGENCY</h1>
+            <p class="mb-5 font-s">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa iure, illum dolore voluptas quibusdam quo, placeat quos necessitatibus inventore .</p>
+            <button class="cnt font-s"  data-toggle="modal" data-target="#myModal">CONTACT US</button>
+        </div>
+        <div class="info-image">
+            <!-- <img src="./photo.png" alt=""> -->
+       </div>
+    </div>
+    <div class="container">
+        <!-- <h2>Modal Example</h2> -->
+        <!-- Trigger the modal with a button -->
+        <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+      
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <!-- <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+              </div> -->
+              <div class="modal-body">
+                <h5 class="mb-3 w-100 font-weight-bolder ">Talk to us</h5>
+                <form action="https://getform.io/f/820432d0-6c36-41b1-a275-13df697879ba" method="POST">
+                    <input class="w-100 mt-3 pb-2" type="email" name="email" placeholder="Work email*">
+                    <div class="d-flex justify-content-between">
+                        <input class="w-49 mt-5 pb-2" type="text" name="first-name" placeholder="First name*">
+                        <input class="w-50 mt-5 pb-2" type="text" name="last-name" placeholder="Last-name*"> 
+                    </div>
+                    <!-- checkbox handle --> 
+                    <div class="d-flex">
+                        <input  style="margin-top: 54px;" type="checkbox" id="subm" name="subscribe" value="yes"  required>
+                        <label class="mt-5 ml-1" for="subm">I agree to Fyle's terms and conditions, and provide concent to send me connections.</label>
+                    </div>
+                    <button class="cnt w-100 mt-3"  type="submit">Contact Us</button>
+                </form>
+              </div>
+              <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div> -->
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    <div class="slide-part W-100" style="background-color: #FAFAFA;">
+      <h5 class="text-color w-75 mx-auto pt-5 ">WHAT WE DO</h5>
+      <div class="d-flex w-75 mx-auto">
+        <h3 class="w-25 font-weight-bolder mt-3 mb-4 mr-3">SERVICES PROVIDED FOR YOU</h3>
+        <p class="w-50 ml-5 mt-3 pl-3" style="font-size:0.8rem !important;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates magnam provident, sint repudiandae explicabo repellat maxime quis? At aut minima dolorum sed omnis hic magni.</p>
+      </div>
+      <div id="myDIV" class="my-div" onscroll="myFunction()">
+        <div class="content" id="content">
+            <div  onmouseleave="document.getElementById('sliding-fliper').style.width = '0px';
+            document.getElementById('sliding-card').style.width = '20vw';" id="sliding-fliper" class="slide-flip ">
+              <div class="w-75 h-100 d-flex justify-content-center align-center flex-column mx-auto text-center">
+                <img style="height: 50px; width: 50px; margin: 0 auto;" src="./web.png" alt="">
+                <h5 class="mt-3 text-white">WEB DEVELOPMENT</h5>
+                <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button onclick="location.href = 'https://www.fylehq.com';" class="btn-read">READ MORE</button>
+              </div>
+            </div>
+            <div onmouseover="document.getElementById('sliding-fliper').style.width = '20vw'; document.getElementById('sliding-card').style.width = '0vw';"  id="sliding-card" class="slide-cards">
+              <img  class="w-100 h-100" src="./slide-img1.png" alt="">
+            </div>
+            <div  onmouseleave="document.getElementById('sliding-fliperd').style.width = '0px';
+            document.getElementById('sliding-cardd').style.width = '20vw';" id="sliding-fliperd" class="slide-flip">
+              <div class="w-75 h-100 d-flex justify-content-center align-center flex-column mx-auto text-center">
+                <img style="height: 50px; width: 50px; margin: 0 auto;" src="./web.png" alt="">
+                <h5 class="mt-3 text-white">WEB DEVELOPMENT</h5> 
+                <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button onclick="location.href = 'https://www.fylehq.com';" class="btn-read">READ MORE</button>
+              </div>
+            </div>
+            <div onmouseover="document.getElementById('sliding-fliperd').style.width = '20vw'; document.getElementById('sliding-cardd').style.width = '0vw';"  id="sliding-cardd" class="slide-cards">
+              <img class="w-100 h-100" src="./slide-img2.png" alt="">
+            </div>
+            <div  onmouseleave="document.getElementById('sliding-fliper3').style.width = '0px';
+            document.getElementById('sliding-card3').style.width = '20vw';" id="sliding-fliper3" class="slide-flip">
+              <div class="w-75 h-100 d-flex justify-content-center align-center flex-column mx-auto text-center">
+                <img style="height: 50px; width: 50px; margin: 0 auto;" src="./web.png" alt="">
+                <h5 class="mt-3 text-white">WEB DEVELOPMENT</h5>
+                <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button onclick="location.href = 'https://www.fylehq.com';" class="btn-read">READ MORE  </button>
+              </div>
+            </div>
+            <div onmouseover="document.getElementById('sliding-fliper3').style.width = '20vw'; document.getElementById('sliding-card3').style.width = '0vw';"  id="sliding-card3" class="slide-cards">
+              <img style="width: 104%;" class=" h-100  rounded" src="./slide-img3.png" alt="">
+            </div>
+            <div  onmouseleave="document.getElementById('sliding-fliper4').style.width = '0px';
+            document.getElementById('sliding-card4').style.width = '20vw';" id="sliding-fliper4" class="slide-flip">
+              <div class="w-75 h-100 d-flex justify-content-center align-center flex-column mx-auto text-center">
+                <img style="height: 50px; width: 50px; margin: 0 auto;" src="./web.png" alt="">
+                <h5 class="mt-3 text-white">WEB DEVELOPMENT</h5>
+                <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button onclick="location.href = 'https://www.fylehq.com';" class="btn-read">READ MORE   </button>
+              </div>
+            </div>
+            <div onmouseover="document.getElementById('sliding-fliper4').style.width = '20vw'; document.getElementById('sliding-card4').style.width = '0vw';"  id="sliding-card4" class="slide-cards">
+              <img class="w-100 h-100 rounded" src="https://images.unsplash.com/photo-1605595987523-61f5d10bc629?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=358&q=80" alt="">
+            </div>
+            <div  onmouseleave="document.getElementById('sliding-fliper7').style.width = '0px';
+            document.getElementById('sliding-card7').style.width = '20vw';" id="sliding-fliper7" class="slide-flip">
+              <div class="w-75 h-100 d-flex justify-content-center align-center flex-column mx-auto text-center">
+                <img style="height: 50px; width: 50px; margin: 0 auto;" src="./web.png" alt="">
+                <h5 class="mt-3 text-white">WEB DEVELOPMENT</h5>
+                <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button onclick="location.href = 'https://www.fylehq.com';" class="btn-read">READ MORE    </button>
+              </div>
+            </div>
+            <div onmouseover="document.getElementById('sliding-fliper7').style.width = '20vw'; document.getElementById('sliding-card7').style.width = '0vw';"  id="sliding-card7" class="slide-cards">
+              <img class="w-100 h-100 rounded" src="https://images.unsplash.com/photo-1469504625234-7a780ba8e884?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1825&q=80" alt="">
+            </div>
+            <div  onmouseleave="document.getElementById('sliding-fliper5').style.width = '0px';
+            document.getElementById('sliding-card5').style.width = '20vw';" id="sliding-fliper5" class="slide-flip">
+              <div class="w-75 h-100 d-flex justify-content-center align-center flex-column mx-auto text-center">
+                <img style="height: 50px; width: 50px; margin: 0 auto;" src="./web.png" alt="">
+                <h5 class="mt-3 text-white">WEB DEVELOPMENT</h5>
+                <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button onclick="location.href = 'https://www.fylehq.com';" class="btn-read">READ MORE</button>
+              </div>
+            </div>
+            <div onmouseover="document.getElementById('sliding-fliper5').style.width = '20vw'; document.getElementById('sliding-card5').style.width = '0vw';"  id="sliding-card5" class="slide-cards">
+              <img class="w-100 h-100 rounded" src="https://images.unsplash.com/photo-1629268183546-c24a852c37d5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="">
+            </div>
+            <div  onmouseleave="document.getElementById('sliding-fliper6').style.width = '0px';
+            document.getElementById('sliding-card6').style.width = '20vw';" id="sliding-fliper6" class="slide-flip">
+              <div class="w-75 h-100 d-flex justify-content-center align-center flex-column mx-auto text-center">
+                <img style="height: 50px; width: 50px; margin: 0 auto;" src="./web.png" alt="">
+                <h5 class="mt-3 text-white">WEB DEVELOPMENT</h5>
+                <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button onclick="location.href = 'https://www.fylehq.com';" class="btn-read">READ MORE</button>
+              </div>
+            </div>
+            <div onmouseover="document.getElementById('sliding-fliper6').style.width = '20vw'; document.getElementById('sliding-card6').style.width = '0vw';"  id="sliding-card6" class="slide-cards">
+              <img class="w-100 h-100 rounded" src="https://images.unsplash.com/photo-1629108949591-2589843e6e85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=282&q=80" alt="">
+            </div>
+            <div  onmouseleave="document.getElementById('sliding-flipera').style.width = '0px';
+            document.getElementById('sliding-carda').style.width = '20vw';" id="sliding-flipera" class="slide-flip">
+              <div class="w-75 h-100 d-flex justify-content-center align-center flex-column mx-auto text-center">
+                <img style="height: 50px; width: 50px; margin: 0 auto;" src="./web.png" alt="">
+                <h5 class="mt-3 text-white">WEB DEVELOPMENT</h5>
+                <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button onclick="location.href = 'https://www.fylehq.com';" class="btn-read">READ MORE</button>
+              </div>
+            </div>
+            <div onmouseover="document.getElementById('sliding-flipera').style.width = '20vw'; document.getElementById('sliding-carda').style.width = '0vw';"  id="sliding-carda" class="slide-cards">
+              <img class="w-100 h-100 rounded" src="https://images.unsplash.com/photo-1602711139800-f5ed6e92ff96?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="">
+            </div>
+            <div  onmouseleave="document.getElementById('sliding-fliperb').style.width = '0px';
+            document.getElementById('sliding-cardb').style.width = '20vw';" id="sliding-fliperb" class="slide-flip">
+              <div class="w-75 h-100 d-flex justify-content-center align-center flex-column mx-auto text-center">
+                <img style="height: 50px; width: 50px; margin: 0 auto;" src="./web.png" alt="">
+                <h5 class="mt-3 text-white">WEB DEVELOPMENT</h5>
+                <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button onclick="location.href = 'https://www.fylehq.com';" class="btn-read">READ MORE</button>
+              </div>
+            </div>
+            <div onmouseover="document.getElementById('sliding-fliperb').style.width = '20vw'; document.getElementById('sliding-cardb').style.width = '0vw';"  id="sliding-cardb" class="slide-cards">
+              <img class="w-100 h-100 rounded" src="https://images.unsplash.com/photo-1628917373953-2857555c0ff2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1900&q=80" alt="">
+            </div>
+            <div  onmouseleave="document.getElementById('sliding-fliperc').style.width = '0px';
+            document.getElementById('sliding-cardc').style.width = '20vw';" id="sliding-fliperc" class="slide-flip">
+              <div class="w-75 h-100 d-flex justify-content-center align-center flex-column mx-auto text-center">
+                <img style="height: 50px; width: 50px; margin: 0 auto;" src="./web.png" alt="">
+                <h5 class="mt-3 text-white">WEB DEVELOPMENT</h5>
+                <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button onclick="location.href = 'https://www.fylehq.com';" class="btn-read">READ MORE</button>
+              </div>
+            </div>
+            <div onmouseover="document.getElementById('sliding-fliperc').style.width = '20vw'; document.getElementById('sliding-cardc').style.width = '0vw';"  id="sliding-cardc" class="slide-cards">
+              <img class="w-100 h-100 rounded rounded" src="https://images.unsplash.com/photo-1606049330485-e558e626b406?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80" alt="">
+            </div>
+            
+        </div>
+      </div>
+      <div class="d-flex mt-4 w-75 mx-auto pb-5">
+        <div id="one" class="one "> <div id="one-in" class="one-in"></div> </div>
+        <div id="two" class="two ml-2"> <div id="two-in" class="two-in"></div> </div>
+        <div id="three" class="three ml-2"> <div id="three-in" class="three-in"></div> </div>
+      </div>
+      
+      <p id="demo" style="display: none;"></p>
+    </div>
+    <div class="w-75 mx-auto why-us mt-5">
+      <h5 class="text-color w-100 mt-5 text-center">WHY CHOOSE US</h5>
+      <h2  class=" w-100 font-weight-bolder mt-4 mb-5 text-center">WHY WE ARE BEST</h2>
+      <div class="d-flex">
+        <div class="w-25 pr-5 d-flex flex-column mt-3 mb-5">
+          <img class="small-img" src="./card-1.png" alt="">
+          <h6 class="font-weight-bolder mt-3">Clarified Vision & Target</h6>
+          <p class="sm-text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsum eum </p>
+        </div>
+        <div class="w-25 pr-5 flex-column mt-3 mb-5">
+          <img class="small-img" src="./card-2.png" alt="">
+          <h6 class="font-weight-bolder mt-3">High Performance</h6>
+          <p class="sm-text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsum eum </p>
+        </div>
+        <div class="w-25 pr-5 flex-column mt-3 mb-5">
+          <img class="small-img" src="./card-3.png" alt="">
+          <h6 class="font-weight-bolder mt-3">Maintain Security</h6>
+          <p class="sm-text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsum eum </p>
+        </div>
+        <div class="w-25 pr-5 flex-column mt-3 mb-5">
+          <img class="small-img" src="./card-4.png" alt="">
+          <h6 class="font-weight-bolder mt-3">Better Strategy & Quality</h6>
+          <p class="sm-text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsum eum </p>
+        </div>
+      </div>
+      <h5 class="text-color w-100 mt-2 text-center">OUR PROJECTS</h5>
+      <h2  class=" w-100 font-weight-bolder mt-4 mb-5 text-center">WHY WE ARE BEST</h2>
+      <div class="w-100 d-flex justify-content-between mb-5" style="height: 570px;">
+        <div style="width: 68%;">
+          <img id="changeofimage" class="w-100 mr-5 h-100" src="./card-5.png" alt="">
+        </div>
+        <div style="width: 30%; background: #F6F6F6;">
+          <div id="picture1" onclick="clickOn1()" class="w-100 h-33 mx-auto d-flex flex-column justify-content-center align-center p-4 for-hov">
+            <h5 class="font-weight-bolder">Genderless Kei - Japan's Hot</h5>
+            <p class="mt-2">Set to launch on the manufacturer's new  A330neo aircraft in 2017, it's offering lots of</p>
+          </div>
+          <div id="picture2" onclick="clickOn2()" class="w-100 h-33 mx-auto d-flex flex-column justify-content-center align-center p-4 for-hov" style="background: #FF3147; color: white;">
+            <h5 class="font-weight-bolder">Better Strategy & Quality</h5>
+            <p class="mt-2">Set to launch on the manufacturer's new  A330neo aircraft in 2017, it's offering lots of</p>
+          </div>
+          <div id="picture3" onclick="clickOn3()" class="w-100 h-33 mx-auto d-flex flex-column justify-content-center align-center p-4 for-hov">
+            <h5 class="font-weight-bolder">Genderless Kei - Japan's Hot</h5>
+            <p class="mt-2">Set to launch on the manufacturer's new  A330neo aircraft in 2017, it's offering lots of</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background: #FAFAFA;" class="w-100 pb-5">
+      <div class="w-75 mx-auto pt-1">
+        <h5 class="text-color w-100 mt-5 text-center">Experts Growth</h5>
+        <h2  class=" w-100 font-weight-bolder mt-4 mb-5 text-center">OUR COMPANY GROWTH</h2>
+        <div class="w-100 d-flex justify-content-between pb-2">
+          <div class="d-flex mx-auto flex-column justify-content-center align-items-center bg-white grow-hov" style="width: 16%; height: 150px;">
+            <img style="width: 25px; height: 25px;" src="./hover-1.png" alt="">
+            <h1 class="mt-1">199+</h1>
+            <p>Saticfied Customers</p>
+          </div>
+          <div class="d-flex mx-auto flex-column justify-content-center align-items-center bg-white grow-hov" style="width: 16%; height: 150px;">
+            <img style="width: 25px; height: 25px;" src="./hover-2.png" alt="">
+            <h1 class="mt-1">1597+</h1>
+            <p>Days Of Operation</p>
+          </div>
+          <div class="d-flex mx-auto flex-column justify-content-center align-items-center bg-white grow-hov" style="width: 16%; height: 150px;">
+            <img style="width: 25px; height: 25px;" src="./hover-1.png" alt="">
+            <h1 class="mt-1">283+</h1>
+            <p>Complete Projects</p>
+          </div>
+          <div class="d-flex mx-auto flex-column justify-content-center align-items-center bg-white grow-hov" style="width: 16%; height: 150px;">
+            <img style="width: 25px; height: 25px;" src="./hover-1.png" alt="">
+            <h1 class="mt-1">75+</h1>
+            <p>Win Awards</p>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <div class="w-75 mx-auto">
+      <h5 class="text-color w-100 mt-5 text-center">CLIENT'S FEEDBACK</h5>
+      <h2  class=" w-100 font-weight-bolder mt-4 mb-5 text-center">PEOPLE SAY'S ABOUT US!</h2>
+      <p class="w-50 mx-auto mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi deleniti natus, esse veritatis quas quisquam totam a quaerat sapiente vitae.</p>
+      <p class="mt-3 mx-auto w-50 mb-5"><span class="text-color font-weight-bolder">JANNAT TUMPA</span> <span style="color: #808080;"> - COO,AMERIMAR ENTERPRISES,INC.</span> </p>
+    </div>
+    <div class="w-100  d-flex align-items-center" style="background: url(./footer-bg.png); height: 300px;">
+      <div class="w-75 mx-auto d-flex align-items-center justify-content-center" style="background: url(./footer.png); background-repeat: no-repeat; background-size: contain; height: 55px;"></div>
+
+    </div>
+    
+</body>
+<script>
+
+ var picture1 = document.getElementById('picture1');
+ var picture2 = document.getElementById('picture2');
+ var picture3 = document.getElementById('picture3');
+ var changeOfImage = document.getElementById('changeofimage')
+
+ function clickOn1(){
+   picture1.style.background = '#FF3147';
+   picture1.style.color = 'white';
+   picture2.style.background = "transparent";
+   picture2.style.color = "black";
+   picture3.style.background = "transparent";
+   picture3.style.color = "black";
+   changeOfImage.src = "https://images.unsplash.com/photo-1493770348161-369560ae357d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80";
+ }
+
+
+ function clickOn2(){
+   picture2.style.background = '#FF3147';
+   picture2.style.color = 'white';
+   picture1.style.background = "transparent";
+   picture1.style.color = "black";
+   picture3.style.background = "transparent";
+   picture3.style.color = "black";
+   changeOfImage.src = "./card-5.png";
+ }
+
+ function clickOn3(){
+   picture1.style.background = 'transparent';
+   picture1.style.color = 'black';
+   picture2.style.background = "transparent";
+   picture2.style.color = "black";
+   picture3.style.background = "#FF3147";
+   picture3.style.color = "white";
+   changeOfImage.src = "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80";
+ }
+
+
+ function myFunction() {
+      var elmnt = document.getElementById("myDIV");
+      var content = document.getElementById("content");
+      var x = elmnt.scrollLeft;
+      var y = elmnt.scrollTop;
+      document.getElementById ("demo").innerHTML = "Horizontally: " + x + "px<br>Vertically: " + y + "px";
+      content.style.width = "calc(101%+"+y+"px)"
+
+      if( x < 500){
+         document.getElementById('two').style.border = "none"
+         document.getElementById('two-in').style.background = "black"
+         document.getElementById('one').style.border = "1px solid #FF3147"
+         document.getElementById('one-in').style.background = "#FF3147"
+         document.getElementById('three').style.border = "none"
+         document.getElementById('three-in').style.background = "black"
+       }
+
+      if( x > 900 ){
+         document.getElementById('two').style.border = "1px solid #FF3147"
+         document.getElementById('two-in').style.background = "#FF3147"
+         document.getElementById('one').style.border = "none"
+         document.getElementById('one-in').style.background = "black"
+         document.getElementById('three').style.border = "none"
+         document.getElementById('three-in').style.background = "black"
+       }
+
+       if( x > 1751){
+         document.getElementById('two').style.border = "none"
+         document.getElementById('two-in').style.background = "black"
+         document.getElementById('one').style.border = "none"
+         document.getElementById('one-in').style.background = "black"
+         document.getElementById('three').style.border = "1px solid #FF3147"
+         document.getElementById('three-in').style.background = "#FF3147"
+       }
+    }
+</script>
+</html>
