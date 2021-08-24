@@ -36,6 +36,7 @@ body {
   background: url(./photo.png);
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 5px;
 }
 .cnt {
   width: 150px;
